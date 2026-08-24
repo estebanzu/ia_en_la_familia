@@ -1,9 +1,18 @@
 PID_FILE := .slidev.pid
 PORT := 3030
 
-.PHONY: all start stop restart status build
+.PHONY: all start stop restart status build clean dist-clean
 
 all: start
+
+clean:
+	rm -rf dist/
+	rm -f .slidev.pid slidev.log
+	rm -f test-*.png step-slide*-*.png step*-c*.png
+
+dist-clean: clean
+	rm -rf node_modules/
+	rm -f package-lock.json
 
 start:
 	@if [ -f $(PID_FILE) ] && kill -0 $$(cat $(PID_FILE)) 2>/dev/null; then \
