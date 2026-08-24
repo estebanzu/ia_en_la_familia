@@ -1,0 +1,291 @@
+:root {
+  --slidev-theme-primary: #1d4ed8;
+  --slidev-theme-accent: #eab308;
+  --slidev-theme-text: #0f172a;
+  --slidev-theme-bg: #ffffff;
+}
+
+html, body, #app {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* Force presentation to single-column full-screen white view without black letterboxing */
+#page-root {
+  display: flex !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #ffffff !important;
+  grid-template-columns: 1fr !important;
+}
+
+#slide-container {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  background-color: #ffffff !important;
+  flex: 1 1 100% !important;
+}
+
+#slide-content,
+.slidev-slide-wrapper,
+.slidev-layout,
+.slidev-slide-content,
+.slidev-layout.cover,
+.slidev-layout.intro,
+.slidev-layout.default,
+.slidev-layout.center {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+.slidev-layout.cover::before,
+.slidev-layout.cover::after,
+.slidev-layout.intro::before,
+.slidev-layout.intro::after,
+.slidev-layout::before,
+.slidev-layout::after {
+  display: none !important;
+  background: none !important;
+  filter: none !important;
+}
+
+/* ===========================================
+   CUSTOM SLIDE TRANSITIONS (Slidev Transitions Skill)
+   =========================================== */
+
+/* Professional Slide Transition - Gentle, consistent */
+.pro-slide-enter-active,
+.pro-slide-leave-active {
+  transition: all 0.35s ease-out;
+}
+.pro-slide-enter-from {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.pro-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+/* Scale Transition - For section breaks */
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.scale-enter-from {
+  opacity: 0;
+  transform: scale(0.92);
+}
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(1.08);
+}
+
+/* Fade Transition - For cover/end slides */
+.pro-fade-enter-active,
+.pro-fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+.pro-fade-enter-from,
+.pro-fade-leave-to {
+  opacity: 0;
+}
+
+/* Blur Transition - For reflective moments */
+.blur-enter-active,
+.blur-leave-active {
+  transition: all 0.5s ease;
+}
+.blur-enter-from {
+  opacity: 0;
+  filter: blur(20px);
+}
+.blur-leave-to {
+  opacity: 0;
+  filter: blur(20px);
+}
+
+/* ===========================================
+   CLICK ANIMATIONS (Slidev Click Animations Skill)
+   =========================================== */
+
+/* Smooth progressive reveal - base */
+.slidev-vclick-target {
+  transition: opacity 400ms cubic-bezier(0.16, 1, 0.3, 1), transform 400ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0 !important;
+  transform: translateY(12px) !important;
+  pointer-events: none !important;
+}
+
+/* Scale reveal variant - for cards/boxes */
+.vclick-scale .slidev-vclick-hidden {
+  opacity: 0 !important;
+  transform: scale(0.9) !important;
+}
+
+/* Blur reveal variant - for emphasis */
+.vclick-blur .slidev-vclick-hidden {
+  opacity: 0 !important;
+  filter: blur(8px) !important;
+}
+
+/* Staggered list items */
+.v-clicks-stagger > * {
+  transition-delay: calc(var(--stagger-index, 0) * 80ms);
+}
+
+/* ===========================================
+   MOTION ANIMATIONS (v-motion support)
+   =========================================== */
+
+/* Entrance animations for icons and key elements */
+@keyframes slide-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes bounce-in {
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.4; }
+  50% { transform: scale(1.3); opacity: 0.1; }
+  100% { transform: scale(0.8); opacity: 0.4; }
+}
+
+.animate-slide-up { animation: slide-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.animate-slide-left { animation: slide-in-left 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.animate-scale-in { animation: scale-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; opacity: 0; }
+.animate-fade-in { animation: fade-in 0.5s ease forwards; opacity: 0; }
+.animate-bounce-in { animation: bounce-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; opacity: 0; }
+
+/* Delay utilities */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+.delay-900 { animation-delay: 900ms; }
+.delay-1000 { animation-delay: 1000ms; }
+
+/* Physics-based hover lift micro-interactions */
+.hover-lift, .shadow-sm, .shadow-md, .shadow-xs {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.hover-lift:hover, .shadow-sm:hover, .shadow-md:hover {
+  transform: translateY(-3px) scale(1.005) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* View Transition API support */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Hide Goto Dialog / Autocomplete contents list panel on the right */
+#slidev-goto-dialog,
+.autocomplete-list,
+div[id="slidev-goto-dialog"],
+ul.table,
+#slidev-goto-dialog * {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* Hide side editor, quick overview, outline, and sidebars completely */
+#page-root > div:not(#slide-container),
+.slidev-side-editor,
+div[class*="SideEditor"],
+div[class*="side-editor"],
+div[class*="QuickOverview"],
+div[class*="quick-overview"],
+.z-modal,
+.z-dragging,
+button[title*="overview"],
+button[title*="Overview"],
+button[title*="editor"],
+button[title*="Editor"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  opacity: 0 !important;
+}
+
+h1 {
+  color: #0f172a !important;
+  font-weight: 800;
+}
+
+h2, h3 {
+  color: #1e3a8a !important;
+  font-weight: 700;
+}
+
+p, li, span, td {
+  color: #334155;
+}
+
+strong, b {
+  color: #0f172a;
+}
+
+/* Print/PDF export - disable animations */
+@media print {
+  .slidev-vclick-target,
+  .animate-slide-up,
+  .animate-slide-left,
+  .animate-scale-in,
+  .animate-fade-in,
+  .animate-bounce-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .slidev-vclick-hidden {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
