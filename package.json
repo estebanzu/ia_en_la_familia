@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.22",
-    "@slidev/cli": "^51.4.2",
+    "@slidev/cli": "^52.19.1",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0"
   },
@@ -19,7 +19,7 @@
     "canvas-confetti": "^1.9.4",
     "imagetracerjs": "^1.2.6",
     "playwright": "^1.62.1",
-    "potrace": "^2.1.8",
+    "potrace": "^2.1.1",
     "sharp": "^0.35.3"
   }
 }

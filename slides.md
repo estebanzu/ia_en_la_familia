@@ -17,6 +17,7 @@ mdc: true
 ---
 
 # Inteligencia Artificial Segura
+
 <h3 class="text-blue-700 font-bold text-2xl mt-3">Cómo Comprenderla, Usarla y Protegerse en Comunidad</h3>
 
 <div class="mt-6 text-lg text-slate-700 font-medium">
@@ -36,6 +37,7 @@ OBJETIVO: Bienvenida, sintonía pastoral y encuadre del taller.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -93,6 +95,7 @@ OBJETIVO: Presentación personal y generación de confianza con la comunidad.
 -->
 
 ---
+
 layout: default
 class: text-center
 transition: fade
@@ -127,6 +130,7 @@ OBJETIVO: Romper el hielo con el imaginario popular de Hollywood.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -169,6 +173,7 @@ OBJETIVO: Explicar el funcionamiento técnico en lenguaje cotidiano.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -217,6 +222,7 @@ OBJETIVO: Conectar la tecnología con la vida diaria de los padres.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -288,6 +294,7 @@ OBJETIVO: Profundizar en la dimensión ética y moral de la inteligencia artific
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -350,6 +357,7 @@ OBJETIVO: Responder con serenidad y claridad a la gran inquietud sobre el empleo
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -391,6 +399,7 @@ DINÁMICA DE INTERACCIÓN 1:
 -->
 
 ---
+
 layout: default
 transition: scale | scale
 ---
@@ -443,6 +452,7 @@ OBJETIVO: Enseñar a los padres la diferencia entre 'hacer trampa' y 'tutoría s
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -521,6 +531,7 @@ OBJETIVO: Casos prácticos de la vida diaria de madres y padres.
 -->
 
 ---
+
 layout: default
 transition: fade
 ---
@@ -564,6 +575,7 @@ DINÁMICA PRÁCTICA EN VIVO:
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -605,6 +617,7 @@ OBJETIVO: Enseñar el pensamiento crítico cristiano.
 -->
 
 ---
+
 layout: default
 transition: scale | scale
 ---
@@ -649,13 +662,14 @@ OBJETIVO: Dejar reglas visuales claras sobre privacidad de datos.
 -->
 
 ---
+
 layout: default
 transition: fade
 ---
 
 <div class="text-xs font-bold uppercase tracking-wider text-rose-700 mb-1">MÓDULO 3: RIESGOS Y DISCERNIMIENTO (40–60 MIN)</div>
 
-# <lucide-eye-off class="inline-block text-rose-600 mr-2" /> El Peligro del *Sharenting*: Protegiendo a Nuestros Hijos
+# <lucide-eye-off class="inline-block text-rose-600 mr-2" /> El Peligro del _Sharenting_: Protegiendo a Nuestros Hijos
 
 <div class="grid grid-cols-12 gap-5 mt-2 items-center">
 
@@ -701,6 +715,7 @@ OBJETIVO: Sensibilizar sobre la sobreexposición de los niños en redes.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -751,6 +766,7 @@ OBJETIVO: Despejar de forma categórica el mito de que la IA 'siente' o 'se enam
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -807,6 +823,7 @@ OBJETIVO: Abordar la crisis de soledad juvenil con mirada pastoral.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -848,6 +865,7 @@ DINÁMICA DE INTERACCIÓN 2:
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -885,6 +903,7 @@ OBJETIVO: Alerta práctica sobre fraudes comunes en la comunidad.
 -->
 
 ---
+
 layout: default
 transition: scale | scale
 ---
@@ -936,6 +955,7 @@ OBJETIVO: Fijar el protocolo mnemotécnico.
 -->
 
 ---
+
 layout: default
 transition: fade
 ---
@@ -977,6 +997,7 @@ TALLER PRÁCTICO EN VIVO:
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -1052,6 +1073,7 @@ OBJETIVO: Cerrar con ejemplos prácticos de amor y firmeza.
 -->
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -1101,6 +1123,7 @@ OBJETIVO: Síntesis final de compromisos. Entregar el folleto impreso a las fami
 -->
 
 ---
+
 layout: center
 class: text-center
 transition: slide-up
@@ -1126,6 +1149,7 @@ Guía de respuestas para preguntas frecuentes:
 -->
 
 ---
+
 layout: end
 class: text-center
 transition: fade

@@ -1,11 +1,11 @@
-import sharp from 'sharp';
-import { trace } from 'potrace';
-import { writeFileSync, unlinkSync } from 'fs';
-import { promisify } from 'util';
+import sharp from "sharp";
+import { trace } from "potrace";
+import { writeFileSync, unlinkSync } from "fs";
+import { promisify } from "util";
 
-const inputPath = 'logo.jpg';
-const outputPath = 'logo.svg';
-const tempPath = 'temp-trace.png';
+const inputPath = "logo.jpg";
+const outputPath = "logo.svg";
+const tempPath = "temp-trace.png";
 
 const traceAsync = promisify(trace);
 
@@ -15,16 +15,16 @@ async function convert() {
     await sharp(inputPath)
       .grayscale()
       .threshold(128)
-      .toFormat('png')
+      .toFormat("png")
       .toFile(tempPath);
 
     // Trace the PNG file
     const svg = await traceAsync(tempPath, {
       turdsize: 100,
-      turnpolicy: 'minority',
+      turnpolicy: "minority",
       alphamax: 1,
       opticurve: true,
-      opttolerance: 0.2
+      opttolerance: 0.2,
     });
 
     // Change fill from black to white
@@ -34,7 +34,7 @@ async function convert() {
     unlinkSync(tempPath);
     console.log(`Converted ${inputPath} -> ${outputPath}`);
   } catch (err) {
-    console.error('Conversion failed:', err.message);
+    console.error("Conversion failed:", err.message);
     process.exit(1);
   }
 }

@@ -54,7 +54,12 @@ check:
 
 security:
 	@echo "Running security audit..."
-	@npm audit --audit-level=moderate
+	@if [ "$(FIX)" = "1" ]; then \
+		echo "Fixing vulnerabilities (may include breaking changes)..."; \
+		npm audit fix --force; \
+	else \
+		npm audit --audit-level=moderate; \
+	fi
 
 format:
 	@echo "Formatting code..."

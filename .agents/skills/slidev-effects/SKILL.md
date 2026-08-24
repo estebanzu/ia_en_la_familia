@@ -12,11 +12,12 @@ This skill provides production-tested recipes for enhancing Slidev presentation 
 ## 1. Core Slidev Animation Directives
 
 ### A. Spring & Physics Animations (`v-motion`)
+
 Slidev includes built-in support for `@vueuse/motion`:
 
 ```html
 <!-- Smooth spring entry for cards -->
-<div 
+<div
   v-motion
   :initial="{ y: 40, opacity: 0, scale: 0.95 }"
   :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 200, damping: 20 } }"
@@ -27,6 +28,7 @@ Slidev includes built-in support for `@vueuse/motion`:
 ```
 
 ### B. Animated Hand-Drawn Highlights (`v-mark` / RoughNotation)
+
 Slidev includes RoughNotation directives out of the box:
 
 ```html
@@ -44,6 +46,7 @@ Slidev includes RoughNotation directives out of the box:
 ```
 
 ### C. Staggered Click-by-Click Reveals (`v-clicks`)
+
 ```html
 <v-clicks>
   <li>Primer punto aparece suavemente</li>
@@ -57,28 +60,41 @@ Slidev includes RoughNotation directives out of the box:
 ## 2. Modern UI & CSS Micro-Interactions
 
 ### A. Card Hover Physics & Lift
+
 In `style.css`:
+
 ```css
 .hover-lift {
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 .hover-lift:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 14px 30px -8px rgba(0, 0, 0, 0.12), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 14px 30px -8px rgba(0, 0, 0, 0.12),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 ```
 
 ### B. Subtle Pulse & Attention Badges
+
 ```html
 <div class="relative flex h-3 w-3">
-  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+  <span
+    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+  ></span>
   <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-600"></span>
 </div>
 ```
 
 ### C. Glassmorphism Accent Cards
+
 ```html
-<div class="backdrop-blur-md bg-white/80 border border-white/40 shadow-lg rounded-2xl p-4">
+<div
+  class="backdrop-blur-md bg-white/80 border border-white/40 shadow-lg rounded-2xl p-4"
+>
   Contenido translúcido con desenfoque de fondo
 </div>
 ```
@@ -88,15 +104,16 @@ In `style.css`:
 ## 3. Interactive Components in Slidev
 
 ### A. Live Counter Component (`components/Counter.vue`)
+
 ```vue
 <script setup>
-import { ref } from 'vue'
-const count = ref(0)
+import { ref } from "vue";
+const count = ref(0);
 </script>
 
 <template>
-  <button 
-    @click="count++" 
+  <button
+    @click="count++"
     class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition-all active:scale-95"
   >
     Clics: {{ count }}
@@ -105,15 +122,19 @@ const count = ref(0)
 ```
 
 ### B. Confetti Celebration Trigger
+
 ```html
 <script setup>
-import confetti from 'canvas-confetti'
-function celebrate() {
-  confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } })
-}
+  import confetti from "canvas-confetti";
+  function celebrate() {
+    confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
+  }
 </script>
 
-<button @click="celebrate" class="px-5 py-2.5 rounded-full bg-amber-400 text-amber-950 font-bold shadow-md hover:scale-105 transition-all">
+<button
+  @click="celebrate"
+  class="px-5 py-2.5 rounded-full bg-amber-400 text-amber-950 font-bold shadow-md hover:scale-105 transition-all"
+>
   🎉 ¡Celebrar Compromiso!
 </button>
 ```
@@ -121,6 +142,7 @@ function celebrate() {
 ---
 
 ## 4. Best Practices Checklist
+
 1. **Never overload a single slide:** Max 2-3 motion elements per slide to avoid distracting the audience.
 2. **Prioritize Contrast:** Ensure text remains WCAG AAA legible over animated gradients.
 3. **Presenter Mode Compatibility:** Always test on `http://localhost:3030/presenter` to ensure animations don't interfere with speaker timers.

@@ -39,20 +39,20 @@ mdc: true
 
   <!-- Capa 3: Logo principal con animación de entrada -->
   <div class="relative z-10 flex flex-col items-center">
-    
+
     <!-- Anillo de luz pulsante detrás del logo -->
-    <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-400 via-amber-400 to-blue-400 opacity-0 animate-pulse-ring" 
+    <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-400 via-amber-400 to-blue-400 opacity-0 animate-pulse-ring"
       style="animation-delay: 0.3s; animation-duration: 3s;" />
-    
+
     <!-- Logo -->
-    <img 
-      src="/logo.jpg" 
+    <img
+      src="/logo.jpg"
       alt="Logo Inteligencia Artificial Segura"
       class="w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-2xl rounded-2xl
              animate-logo-entrance"
       style="animation-delay: 0.5s;"
     />
-    
+
     <!-- Texto reveal animado -->
     <div class="mt-6 space-y-3" v-click="2">
       <h1 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight
@@ -61,14 +61,14 @@ mdc: true
       >
         Inteligencia Artificial Segura
       </h1>
-      
+
       <h2 class="text-lg md:text-xl text-blue-700 font-medium
                  animate-text-reveal"
         style="animation-delay: 1.5s;"
       >
         Cómo Comprenderla, Usarla y Protegerse en Comunidad
       </h2>
-      
+
       <div class="flex items-center justify-center gap-2 mt-4
                  animate-text-reveal"
         style="animation-delay: 1.8s;"
@@ -77,7 +77,7 @@ mdc: true
         <lucide-sparkles class="text-amber-500 text-xl animate-pulse-gentle" />
         <div class="w-16 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
       </div>
-      
+
       <p class="text-sm md:text-base text-slate-600 font-medium
                  animate-text-reveal"
         style="animation-delay: 2.1s;"
@@ -100,6 +100,7 @@ mdc: true
         →
       </kbd>
     </div>
+
   </div>
 
   <!-- Capa 4: Versículo de fondo sutil -->
@@ -201,6 +202,7 @@ mdc: true
 </style>
 
 ---
+
 layout: default
 transition: slide-left
 ---

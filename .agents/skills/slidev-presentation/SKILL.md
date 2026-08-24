@@ -55,6 +55,7 @@ Every Slidev project must maintain this minimal, robust file structure:
 Slidev dev mode includes side editors and search dialogs that can distract from the slides. Use these overrides:
 
 ### `style.css`
+
 ```css
 :root {
   --slidev-theme-primary: #1d4ed8;
@@ -63,7 +64,9 @@ Slidev dev mode includes side editors and search dialogs that can distract from 
   --slidev-theme-bg: #ffffff;
 }
 
-html, body, #app {
+html,
+body,
+#app {
   background-color: var(--slidev-theme-bg) !important;
   color: var(--slidev-theme-text) !important;
   margin: 0 !important;
@@ -107,17 +110,18 @@ html, body, #app {
 ```
 
 ### `setup/main.ts`
+
 ```ts
-import { defineAppSetup } from '@slidev/types'
+import { defineAppSetup } from "@slidev/types";
 
 export default defineAppSetup(() => {
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     try {
-      localStorage.setItem('slidev-show-editor', 'false')
-      localStorage.setItem('slidev-show-overview', 'false')
+      localStorage.setItem("slidev-show-editor", "false");
+      localStorage.setItem("slidev-show-overview", "false");
     } catch (_) {}
   }
-})
+});
 ```
 
 ---
@@ -128,8 +132,14 @@ Place branding (e.g., logo) at the bottom-left of every slide:
 
 ```vue
 <template>
-  <footer class="absolute bottom-3 left-6 z-50 flex items-center gap-2 pointer-events-none">
-    <img src="/logo.jpg" alt="Logo" class="h-9 object-contain rounded shadow-sm bg-white p-0.5 border border-slate-100" />
+  <footer
+    class="absolute bottom-3 left-6 z-50 flex items-center gap-2 pointer-events-none"
+  >
+    <img
+      src="/logo.jpg"
+      alt="Logo"
+      class="h-9 object-contain rounded shadow-sm bg-white p-0.5 border border-slate-100"
+    />
   </footer>
 </template>
 ```
@@ -142,9 +152,9 @@ Place branding (e.g., logo) at the bottom-left of every slide:
 2. Reference directly in `slides.md` using HTML5 video tags:
 
 ```html
-<video 
-  controls 
-  playsinline 
+<video
+  controls
+  playsinline
   class="w-full max-h-[330px] rounded-xl shadow-md border-2 border-slate-300 bg-black mx-auto"
   src="/video.mp4"
 >

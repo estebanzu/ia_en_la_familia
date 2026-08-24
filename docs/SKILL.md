@@ -4,6 +4,7 @@ description: Add smooth slide transitions in Slidev. Use this skill for fade, sl
 metadata:
   mcpmarket-version: 1.0.0
 ---
+
 # Slide Transitions in Slidev
 
 This skill covers adding smooth transitions between slides in Slidev, including built-in transitions, custom animations, and directional transitions.
@@ -38,6 +39,7 @@ transition: fade
 # This slide fades in
 
 ---
+
 transition: slide-up
 ---
 
@@ -50,6 +52,7 @@ transition: slide-up
 # Slide 1
 
 ---
+
 transition: zoom
 ---
 
@@ -60,9 +63,9 @@ transition: zoom
 
 ### Fade Transitions
 
-| Name | Effect |
-|------|--------|
-| `fade` | Simple fade in/out |
+| Name       | Effect                |
+| ---------- | --------------------- |
+| `fade`     | Simple fade in/out    |
 | `fade-out` | Fade out, then appear |
 
 ```markdown
@@ -73,12 +76,12 @@ transition: fade
 
 ### Slide Transitions
 
-| Name | Effect |
-|------|--------|
-| `slide-left` | New slide enters from right |
-| `slide-right` | New slide enters from left |
-| `slide-up` | New slide enters from bottom |
-| `slide-down` | New slide enters from top |
+| Name          | Effect                       |
+| ------------- | ---------------------------- |
+| `slide-left`  | New slide enters from right  |
+| `slide-right` | New slide enters from left   |
+| `slide-up`    | New slide enters from bottom |
+| `slide-down`  | New slide enters from top    |
 
 ```markdown
 ---
@@ -117,17 +120,23 @@ transition: slide-left | slide-right
 
 ```markdown
 # Natural slide direction
+
 ---
+
 transition: slide-left | slide-right
 ---
 
 # Vertical navigation
+
 ---
+
 transition: slide-up | slide-down
 ---
 
 # Fade forward, slide back
+
 ---
+
 transition: fade | slide-right
 ---
 ```
@@ -168,14 +177,14 @@ transition: my-transition
 
 Slidev uses Vue transition classes:
 
-| Class | When Applied |
-|-------|--------------|
-| `[name]-enter-from` | Starting state for enter |
-| `[name]-enter-active` | During enter transition |
-| `[name]-enter-to` | Ending state for enter |
-| `[name]-leave-from` | Starting state for leave |
-| `[name]-leave-active` | During leave transition |
-| `[name]-leave-to` | Ending state for leave |
+| Class                 | When Applied             |
+| --------------------- | ------------------------ |
+| `[name]-enter-from`   | Starting state for enter |
+| `[name]-enter-active` | During enter transition  |
+| `[name]-enter-to`     | Ending state for enter   |
+| `[name]-leave-from`   | Starting state for leave |
+| `[name]-leave-active` | During leave transition  |
+| `[name]-leave-to`     | Ending state for leave   |
 
 ## Transition Examples
 
@@ -325,6 +334,7 @@ transition: view-transition
 </div>
 
 ---
+
 transition: view-transition
 ---
 
@@ -348,13 +358,23 @@ transition: view-transition
 
 ```css
 /* Common easing functions */
-.ease-in { transition-timing-function: ease-in; }
-.ease-out { transition-timing-function: ease-out; }
-.ease-in-out { transition-timing-function: ease-in-out; }
-.linear { transition-timing-function: linear; }
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+.linear {
+  transition-timing-function: linear;
+}
 
 /* Cubic bezier for custom easing */
-.custom { transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+.custom {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 ```
 
 ### Delay
@@ -378,6 +398,7 @@ transition: fade
 # Title Slide
 
 ---
+
 layout: default
 transition: slide-left
 ---
@@ -385,6 +406,7 @@ transition: slide-left
 # Content Slide
 
 ---
+
 layout: section
 transition: zoom
 ---
@@ -392,6 +414,7 @@ transition: zoom
 # Section Break
 
 ---
+
 layout: end
 transition: fade
 ---
@@ -425,31 +448,38 @@ Use the same transition family throughout:
 
 ```markdown
 # Good: Consistent slide family
+
 ---
+
 transition: slide-left | slide-right
 ---
 ```
 
 ### 2. Match Content Type
 
-| Content | Suggested Transition |
-|---------|---------------------|
-| Cover/Title | `fade` |
-| Regular content | `slide-left` |
-| Section break | `fade` or `zoom` |
-| Demo/Code | `fade` |
-| Conclusion | `fade` |
+| Content         | Suggested Transition |
+| --------------- | -------------------- |
+| Cover/Title     | `fade`               |
+| Regular content | `slide-left`         |
+| Section break   | `fade` or `zoom`     |
+| Demo/Code       | `fade`               |
+| Conclusion      | `fade`               |
 
 ### 3. Keep It Subtle
 
 ❌ **Too flashy**
+
 ```css
 .crazy-enter-active {
-  animation: spin 2s, bounce 1s, flash 0.5s;
+  animation:
+    spin 2s,
+    bounce 1s,
+    flash 0.5s;
 }
 ```
 
 ✓ **Professional**
+
 ```css
 .subtle-enter-active {
   transition: opacity 0.3s ease;
@@ -465,6 +495,7 @@ transition: slide-left | slide-right
 ### 5. Test Performance
 
 Complex transitions may lag on:
+
 - Large presentations
 - Older devices
 - When exporting to PDF
@@ -510,9 +541,17 @@ Complex transitions may lag on:
 }
 
 @keyframes pop-in {
-  0% { transform: scale(0); opacity: 0; }
-  80% { transform: scale(1.1); }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 ```
 
@@ -537,12 +576,14 @@ transition: [different-transition]
 ```
 
 **TRANSITION PLAN:**
+
 1. Cover slide: [transition]
 2. Content slides: [transition]
 3. Section breaks: [transition]
 4. Conclusion: [transition]
 
 **CUSTOM CSS (if needed):**
+
 ```css
 .[name]-enter-active { ... }
 .[name]-leave-to { ... }
