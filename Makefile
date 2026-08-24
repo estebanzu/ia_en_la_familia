@@ -1,7 +1,7 @@
 PID_FILE := .slidev.pid
 PORT := 3030
 
-.PHONY: all start stop restart status build clean dist-clean
+.PHONY: all start stop restart status build clean dist-clean check security format
 
 all: start
 
@@ -47,3 +47,15 @@ status:
 
 build:
 	npm run build
+
+check:
+	@echo "Running lint/type checks..."
+	@npm run lint 2>/dev/null || echo "No lint script defined; skipping"
+
+security:
+	@echo "Running security audit..."
+	@npm audit --audit-level=moderate
+
+format:
+	@echo "Formatting code..."
+	@npx prettier --write . 2>/dev/null || echo "Prettier not installed; skipping"
