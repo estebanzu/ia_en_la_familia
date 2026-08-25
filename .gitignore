@@ -29,10 +29,10 @@ test-*.png
 step-slide*-*.png
 step*-c*.png
 
-# Large media files (keep in git if needed, but typically large)
-*.mp4
+# Large media files
 *.webm
 *.mov
+!public/*.mp4
 
 # Logs
 *.log
