@@ -37,7 +37,6 @@ OBJETIVO: Bienvenida, sintonía pastoral y encuadre del taller.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -95,7 +94,6 @@ OBJETIVO: Presentación personal y generación de confianza con la comunidad.
 -->
 
 ---
-
 layout: default
 class: text-center
 transition: fade
@@ -130,7 +128,6 @@ OBJETIVO: Romper el hielo con el imaginario popular de Hollywood.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -153,7 +150,7 @@ transition: slide-left
   <p v-click>• <strong class="text-slate-950">Herramienta humana:</strong> Solo responde a las preguntas (<i>prompts</i>) que recibe.</p>
 </div>
 <div v-click class="p-3 rounded-xl bg-blue-50 border-2 border-blue-200 text-xs text-blue-950 font-medium shadow-xs hover-lift">
-  💡 <i>"La IA no 'sabe' la verdad; requiere siempre del <span v-mark.underline.blue="{ at: 4 }">criterio</span> y de la <span v-mark.underline.amber="{ at: 4 }">ética</span> humana."</i>
+  💡 <i>"La IA no 'sabe' la verdad; requiere siempre del <span v-mark.underline.blue="{ at: 4 }">criterio</span> y de la <span v-mark.underline.orange="{ at: 4 }">ética</span> humana."</i>
 </div>
 </div>
 <div class="w-[34%] h-[calc(100%+4rem)] overflow-hidden relative shadow-2xl border-l-2 border-slate-200 shrink-0">
@@ -173,7 +170,6 @@ OBJETIVO: Explicar el funcionamiento técnico en lenguaje cotidiano.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -222,7 +218,6 @@ OBJETIVO: Conectar la tecnología con la vida diaria de los padres.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -294,7 +289,6 @@ OBJETIVO: Profundizar en la dimensión ética y moral de la inteligencia artific
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -315,7 +309,7 @@ transition: slide-left
     </ul>
   </div>
   <div class="p-2.5 rounded-lg bg-white border border-slate-300 text-xs text-slate-800 font-medium mt-2">
-    ⚠️ <i><span v-mark.underline.amber="{ at: 0 }">El riesgo no es la máquina; es quedarse sin aprender con ella.</span></i>
+    ⚠️ <i><span v-mark.underline.orange="{ at: 0 }">El riesgo no es la máquina; es quedarse sin aprender con ella.</span></i>
   </div>
 </div>
 
@@ -357,7 +351,6 @@ OBJETIVO: Responder con serenidad y claridad a la gran inquietud sobre el empleo
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -399,7 +392,6 @@ DINÁMICA DE INTERACCIÓN 1:
 -->
 
 ---
-
 layout: default
 transition: scale | scale
 ---
@@ -452,7 +444,6 @@ OBJETIVO: Enseñar a los padres la diferencia entre 'hacer trampa' y 'tutoría s
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -531,7 +522,6 @@ OBJETIVO: Casos prácticos de la vida diaria de madres y padres.
 -->
 
 ---
-
 layout: default
 transition: fade
 ---
@@ -575,7 +565,6 @@ DINÁMICA PRÁCTICA EN VIVO:
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -617,7 +606,6 @@ OBJETIVO: Enseñar el pensamiento crítico cristiano.
 -->
 
 ---
-
 layout: default
 transition: scale | scale
 ---
@@ -662,7 +650,6 @@ OBJETIVO: Dejar reglas visuales claras sobre privacidad de datos.
 -->
 
 ---
-
 layout: default
 transition: fade
 ---
@@ -715,7 +702,6 @@ OBJETIVO: Sensibilizar sobre la sobreexposición de los niños en redes.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -755,7 +741,7 @@ transition: slide-left
 </div>
 
 <div v-click class="mt-3 p-2.5 rounded-xl bg-amber-50 border-2 border-amber-300 text-center text-xs text-amber-950 font-medium shadow-xs">
-  ⚠️ <span v-mark.box.rose="{ at: 1 }"><strong>Peligro del apego ficticio:</strong></span> Tratar a un chatbot como persona viva distorsiona los afectos en los jóvenes.
+  ⚠️ <span v-mark.box.red="{ at: 1 }"><strong>Peligro del apego ficticio:</strong></span> Tratar a un chatbot como persona viva distorsiona los afectos en los jóvenes.
 </div>
 
 <!-- notes
@@ -766,7 +752,6 @@ OBJETIVO: Despejar de forma categórica el mito de que la IA 'siente' o 'se enam
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -823,7 +808,6 @@ OBJETIVO: Abordar la crisis de soledad juvenil con mirada pastoral.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -865,7 +849,6 @@ DINÁMICA DE INTERACCIÓN 2:
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -903,7 +886,6 @@ OBJETIVO: Alerta práctica sobre fraudes comunes en la comunidad.
 -->
 
 ---
-
 layout: default
 transition: scale | scale
 ---
@@ -934,7 +916,7 @@ transition: scale | scale
   <div class="text-4xl mb-2">🔑</div>
   <div class="text-base font-bold text-emerald-800 mb-1">3. PALABRA CLAVE</div>
   <div class="text-sm text-slate-700 leading-relaxed font-medium">
-    Pedir el código secreto familiar. <span v-mark.circle.amber="{ at: 1 }"><strong>100% inmune a la IA</strong></span>.
+    Pedir el código secreto familiar. <span v-mark.circle.orange="{ at: 1 }"><strong>100% inmune a la IA</strong></span>.
   </div>
 </div>
 
@@ -955,7 +937,6 @@ OBJETIVO: Fijar el protocolo mnemotécnico.
 -->
 
 ---
-
 layout: default
 transition: fade
 ---
@@ -997,7 +978,6 @@ TALLER PRÁCTICO EN VIVO:
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -1073,7 +1053,6 @@ OBJETIVO: Cerrar con ejemplos prácticos de amor y firmeza.
 -->
 
 ---
-
 layout: default
 transition: slide-left
 ---
@@ -1123,7 +1102,6 @@ OBJETIVO: Síntesis final de compromisos. Entregar el folleto impreso a las fami
 -->
 
 ---
-
 layout: center
 class: text-center
 transition: slide-up
@@ -1149,7 +1127,6 @@ Guía de respuestas para preguntas frecuentes:
 -->
 
 ---
-
 layout: end
 class: text-center
 transition: fade
