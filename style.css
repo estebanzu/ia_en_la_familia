@@ -365,14 +365,23 @@ b {
   color: #0f172a;
 }
 
-/* Print/PDF export - disable animations */
-@media print {
+/* Print/PDF export & Reduced Motion - disable animations for a11y */
+@media (prefers-reduced-motion: reduce), print {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
   .slidev-vclick-target,
   .animate-slide-up,
   .animate-slide-left,
   .animate-scale-in,
   .animate-fade-in,
-  .animate-bounce-in {
+  .animate-bounce-in,
+  .hover-lift {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;

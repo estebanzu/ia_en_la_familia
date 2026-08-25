@@ -78,7 +78,7 @@ transition: slide-left
     />
   </div>
   <div class="text-xs font-bold text-slate-900 mt-2.5">Esteban Zúñiga</div>
-  <div class="text-[11px] text-slate-500 font-medium">Comunidad Parroquial</div>
+  <div class="text-xs text-slate-500 font-medium">Comunidad Parroquial</div>
 </div>
 
 </div>
@@ -107,6 +107,7 @@ transition: fade
   <video 
     controls 
     playsinline 
+    preload="metadata" 
     class="w-full max-h-[320px] rounded-xl shadow-lg border-2 border-slate-300 bg-black mx-auto"
     src="/terminator-war.mp4"
   >
@@ -155,7 +156,7 @@ transition: slide-left
 </div>
 <div class="w-[34%] h-[calc(100%+4rem)] overflow-hidden relative shadow-2xl border-l-2 border-slate-200 shrink-0">
 <img src="/images/library-ai.jpg" alt="Biblioteca y Conocimiento" class="w-full h-full object-cover object-center" />
-<div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-[11px] text-white text-center font-medium shadow-md">
+<div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-xs text-white text-center font-medium shadow-md">
   Procesamiento masivo de datos y criterio humano
 </div>
 </div>
@@ -377,7 +378,7 @@ transition: slide-left
       alt="Estudiante frente a computadora" 
       class="w-full h-full object-cover object-[center_30%]"
     />
-    <div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-[11px] text-white text-center font-medium shadow-md">
+    <div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-xs text-white text-center font-medium shadow-md">
       Acompañar y dialogar en el hogar
     </div>
   </div>
@@ -430,7 +431,7 @@ transition: scale | scale
   alt="Estudio y Acompañamiento" 
   class="w-full h-full object-cover object-center"
 />
-<div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-[11px] text-white text-center font-medium shadow-md">
+<div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-xs text-white text-center font-medium shadow-md">
   Acompañar el esfuerzo sin sustituir el pensamiento
 </div>
 </div>
@@ -664,6 +665,7 @@ transition: fade
   <video 
     controls 
     playsinline 
+    preload="metadata" 
     class="w-full max-h-[360px] rounded-2xl shadow-lg border-2 border-slate-300 bg-black"
     src="/sharenting-h264.mp4"
   >
@@ -674,19 +676,19 @@ transition: fade
 <div class="col-span-4 flex flex-col justify-between space-y-3">
   <div class="p-3.5 rounded-2xl bg-rose-50 border-2 border-rose-200 text-xs text-rose-950 space-y-1.5 shadow-xs font-medium hover-lift">
     <div class="text-xs font-bold uppercase text-rose-900 tracking-wider">⚠️ ¿Qué es el Sharenting?</div>
-    <p class="leading-relaxed text-[11.5px]">
+    <p class="leading-relaxed text-xs">
       La sobreexposición de fotos, nombres, colegios y rutinas de los hijos en redes sociales.
     </p>
   </div>
 
   <div v-click class="p-3.5 rounded-2xl bg-amber-50 border-2 border-amber-300 text-xs text-amber-950 space-y-1.5 shadow-xs font-medium hover-lift">
     <div class="text-xs font-bold uppercase text-amber-900 tracking-wider">🔒 Riesgo con la IA</div>
-    <p class="leading-relaxed text-[11.5px]">
+    <p class="leading-relaxed text-xs">
       Fotos y audios públicos alimentan <strong>reconocimiento facial, deepfakes y clonación de voz</strong>.
     </p>
   </div>
 
-  <div v-click class="p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-[11px] text-blue-950 font-semibold text-center">
+  <div v-click class="p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-950 font-semibold text-center">
     🛡️ <i>"Cuidar su imagen en internet es proteger su dignidad e inocencia."</i>
   </div>
 </div>
@@ -788,6 +790,7 @@ transition: slide-left
   <video 
     controls 
     playsinline 
+    preload="metadata" 
     class="w-full max-h-[225px] rounded-2xl shadow-md border-2 border-slate-300 bg-black mx-auto hover-lift"
     src="/amigo-artificial.mp4"
   >
@@ -835,7 +838,7 @@ transition: slide-left
   alt="Joven buscando afecto en un asistente artificial" 
   class="w-full h-full object-cover object-center"
 />
-<div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-[11px] text-white text-center font-medium shadow-md">
+<div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-xs text-white text-center font-medium shadow-md">
   Escuchar antes de juzgar: Presencia real en el hogar
 </div>
 </div>
@@ -998,7 +1001,7 @@ transition: slide-left
   </div>
   <div class="p-3 flex flex-col justify-between flex-1">
     <div>
-      <div class="text-[11px] font-bold text-emerald-800 uppercase mb-0.5">Caso A: Organización</div>
+      <div class="text-xs font-bold text-emerald-800 uppercase mb-0.5">Caso A: Organización</div>
       <div class="text-sm font-bold text-slate-950 mb-1">Mamá abrumada</div>
       <p class="text-xs text-slate-700 leading-snug font-medium">
         Menús semanales y compras en 5 min. Reduce el estrés y gana serenidad familiar.
@@ -1017,7 +1020,7 @@ transition: slide-left
   </div>
   <div class="p-3 flex flex-col justify-between flex-1">
     <div>
-      <div class="text-[11px] font-bold text-amber-800 uppercase mb-0.5">Caso B: Estudio Honesto</div>
+      <div class="text-xs font-bold text-amber-800 uppercase mb-0.5">Caso B: Estudio Honesto</div>
       <div class="text-sm font-bold text-slate-950 mb-1">Copia sin criterio</div>
       <p class="text-xs text-slate-700 leading-snug font-medium">
         Pacto claro: <i>la IA aporta ideas; la redacción final y comprensión son del alumno</i>.
@@ -1036,7 +1039,7 @@ transition: slide-left
   </div>
   <div class="p-3 flex flex-col justify-between flex-1">
     <div>
-      <div class="text-[11px] font-bold text-rose-800 uppercase mb-0.5">Caso C: Afectividad</div>
+      <div class="text-xs font-bold text-rose-800 uppercase mb-0.5">Caso C: Afectividad</div>
       <div class="text-sm font-bold text-slate-950 mb-1">Apego a la máquina</div>
       <p class="text-xs text-slate-700 leading-snug font-medium">
         Sin gritos: abrir espacios de caminata a solas, escucha activa y comunidad real.
@@ -1090,7 +1093,7 @@ transition: slide-left
     alt="Cena familiar en armonía" 
     class="w-full h-full object-cover object-center"
   />
-  <div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-[11px] text-white text-center font-medium shadow-md">
+  <div class="absolute bottom-6 left-3 right-3 p-2 rounded-xl bg-slate-950/75 backdrop-blur-xs text-xs text-white text-center font-medium shadow-md">
     Presencia, mesa compartida y escucha real en el hogar
   </div>
 </div>

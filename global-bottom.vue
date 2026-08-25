@@ -1,19 +1,19 @@
 <template>
   <footer
-    class="absolute bottom-0 left-0 right-0 z-50 pointer-events-none pb-2.5 px-8"
+    class="absolute bottom-0 left-0 right-0 z-50 pointer-events-none pb-3 px-8"
   >
     <div
-      class="relative flex items-center justify-center opacity-65 hover:opacity-100 transition-opacity duration-300"
+      class="relative flex items-center justify-between opacity-80 hover:opacity-100 transition-opacity duration-300"
     >
-      <!-- Centered Logo and Italic Text -->
-      <div class="flex items-center gap-2">
+      <!-- Centered Logo and Text -->
+      <div class="flex items-center gap-2 pl-2">
         <img
           src="/logo_rm_bg.png"
-          alt="Logo Parroquia"
-          class="h-4.5 object-contain opacity-80"
+          alt="Logo Parroquia Inmaculada Concepción"
+          class="h-5 object-contain"
         />
         <span
-          class="text-[10.5px] italic font-medium text-slate-400 tracking-wide select-none"
+          class="text-xs italic font-semibold text-slate-500 tracking-wide select-none"
         >
           Parroquia Inmaculada Concepción — Mes de la Familia Agosto 2026
         </span>
@@ -22,7 +22,8 @@
       <!-- Page Counter on the right -->
       <div
         v-if="$slidev.nav.currentPage > 1"
-        class="absolute right-0 text-[10px] italic text-slate-300 font-normal select-none"
+        class="text-xs font-bold text-slate-700 select-none bg-slate-100/90 px-2.5 py-0.5 rounded-full border border-slate-300 shadow-2xs"
+        aria-label="Número de diapositiva"
       >
         {{ $slidev.nav.currentPage }} / {{ $slidev.nav.total }}
       </div>
