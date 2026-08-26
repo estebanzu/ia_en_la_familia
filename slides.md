@@ -16,16 +16,25 @@ transition: slide-left | slide-right
 mdc: true
 ---
 
-# Inteligencia Artificial Segura
+<div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
+<iframe
+  src="https://www.youtube.com/embed/Hgg7M3kSqyE?autoplay=1&mute=1&loop=1&playlist=Hgg7M3kSqyE&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+  style="position: absolute; top: 50%; left: 50%; width: 178vh; height: 100vh; transform: translate(-50%, -50%); min-width: 100vw; min-height: 56.25vw; opacity: 1; pointer-events: none; border: none;"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+></iframe>
+</div>
 
-<h3 class="text-blue-700 font-bold text-2xl mt-3">Cómo Comprenderla, Usarla y Protegerse en Comunidad</h3>
+<div style="position: relative; z-index: 10;">
 
-<div class="mt-6 text-lg text-slate-700 font-medium">
+# <span style="color: white;">Inteligencia Artificial Segura</span>
+
+<h3 style="color: white; font-weight: bold; font-size: 1.5rem; margin-top: 0.75rem;">Cómo Comprenderla, Usarla y Protegerse en Comunidad</h3>
+
+<div style="margin-top: 1.5rem; font-size: 1.125rem; color: white; font-weight: 500;">
   Una guía práctica, ética y de protección para madres, padres y cuidadores
 </div>
 
-<div v-click class="mt-8 inline-block px-6 py-3 rounded-full bg-amber-50 border-2 border-amber-300 text-amber-950 text-base font-semibold shadow-sm hover:scale-105 transition-transform duration-300">
-  ✝ <i>"Pues Dios no nos ha dado un espíritu de timidez, sino de fortaleza, de amor y de buen juicio."</i> — 2 Timoteo 1:7
 </div>
 
 <!-- notes
@@ -91,6 +100,61 @@ OBJETIVO: Presentación personal y generación de confianza con la comunidad.
   1. Procesamiento de Señales e Imágenes: La disciplina científica que enseña a una computadora a "ver" fotos o "escuchar" la voz humana.
   2. Internet de las Cosas (IoT): Dispositivos inteligentes del hogar (relojes, cámaras, sensores).
   3. Ciberdefensa: Cómo cuidar la privacidad y la integridad de nuestras familias ante estas tecnologías.
+-->
+
+---
+layout: default
+transition: slide-left
+---
+
+<div class="text-xs font-bold uppercase tracking-wider text-blue-700 mb-1">PRIMEROS PASOS</div>
+
+# <lucide-smartphone class="inline-block text-blue-700 mr-2" /> Instala una IA en tu Celular
+
+<div class="text-sm text-slate-600 mb-3 font-medium">Descarga gratis una de estas aplicaciones para empezar a practicar hoy mismo</div>
+
+<div class="grid grid-cols-2 gap-5 mt-2">
+
+<div v-click class="p-4 rounded-2xl bg-white border-2 border-slate-200 shadow-sm flex flex-col items-center hover-lift">
+  <img src="/chatgpt-logo.svg" alt="ChatGPT Logo" class="h-16 w-16 mb-2" />
+  <div class="text-base font-bold text-slate-950 mb-2">ChatGPT (OpenAI)</div>
+  <div class="w-full space-y-1.5 text-xs text-slate-700 font-medium">
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">1.</span> Abre la <strong>App Store</strong> (iPhone) o <strong>Google Play</strong> (Android).</div>
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">2.</span> Busca <strong>"ChatGPT"</strong> y descarga la app oficial de OpenAI.</div>
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">3.</span> Ábrela y crea una cuenta con tu correo electrónico.</div>
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">4.</span> ¡Listo! Escribe tu primera pregunta en el cuadro de texto.</div>
+  </div>
+  <div class="mt-2.5 p-2 rounded-lg bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 font-semibold text-center w-full">
+    ✅ Gratis · Sin límite de preguntas · En español
+  </div>
+</div>
+
+<div v-click class="p-4 rounded-2xl bg-white border-2 border-slate-200 shadow-sm flex flex-col items-center hover-lift">
+  <img src="/gemini-logo.svg" alt="Google Gemini Logo" class="h-16 w-16 mb-2" />
+  <div class="text-base font-bold text-slate-950 mb-2">Gemini (Google)</div>
+  <div class="w-full space-y-1.5 text-xs text-slate-700 font-medium">
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">1.</span> Abre la <strong>App Store</strong> (iPhone) o <strong>Google Play</strong> (Android).</div>
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">2.</span> Busca <strong>"Google Gemini"</strong> y descarga la app oficial.</div>
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">3.</span> Ábrela e inicia sesión con tu cuenta de <strong>Google</strong>.</div>
+    <div class="flex items-start gap-2"><span class="font-bold text-blue-700 shrink-0">4.</span> ¡Listo! Hazle cualquier pregunta y recibe una respuesta.</div>
+  </div>
+  <div class="mt-2.5 p-2 rounded-lg bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 font-semibold text-center w-full">
+    ✅ Gratis · Integrada con Google · En español
+  </div>
+</div>
+
+</div>
+
+<div v-click class="mt-3 p-2.5 rounded-xl bg-amber-50 border-2 border-amber-300 text-center text-xs text-amber-950 font-medium shadow-xs">
+  📱 <strong>Consejo:</strong> Ambas son gratuitas. Prueba las dos y quédate con la que más te guste.
+</div>
+
+<!-- notes
+[MINUTO 03:00 - 05:00]
+OBJETIVO: Que cada asistente salga del taller con una IA instalada en su teléfono.
+- Guiar paso a paso en vivo: pedir que abran la tienda de apps en su celular.
+- Si alguien no tiene cuenta, ayudarle a crearla en el momento.
+- Mostrar en pantalla un ejemplo rápido de uso después de la instalación.
 -->
 
 ---
