@@ -373,8 +373,11 @@ transition: slide-left
       <li>📉 <strong class="text-slate-950">Atención básica:</strong> Respuestas a preguntas frecuentes.</li>
     </ul>
   </div>
-  <div class="p-2.5 rounded-lg bg-white border border-slate-300 text-xs text-slate-800 font-medium mt-2">
-    ⚠️ <i><span v-mark.underline.orange="{ at: 0 }">El riesgo no es la máquina; es quedarse sin aprender con ella.</span></i>
+</div>
+
+<div v-click class="mt-4 text-center">
+  <div class="text-2xl font-black text-amber-950 leading-snug">
+    ⚠️ El riesgo no es la máquina; es <span class="text-amber-600 underline decoration-4 decoration-amber-400">quedarse sin aprender con ella.</span>
   </div>
 </div>
 
@@ -403,9 +406,7 @@ transition: slide-left
   />
 </div>
 
-<div v-click class="mt-3 p-2.5 rounded-xl bg-amber-50 border-2 border-amber-300 text-center text-xs text-amber-950 font-medium shadow-xs">
-  🚀 <strong>La ventaja humana:</strong> El pensamiento crítico, la empatía y el discernimiento ético.
-</div>
+
 
 <!-- notes
 [TIEMPO: 25:00 - 30:00]
