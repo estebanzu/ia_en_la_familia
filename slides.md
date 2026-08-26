@@ -29,7 +29,7 @@ mdc: true
 
 # <span style="color: white;">Inteligencia Artificial Segura</span>
 
-<h3 style="color: white; font-weight: bold; font-size: 1.5rem; margin-top: 0.75rem;">Cómo Comprenderla, Usarla y Protegerse en Comunidad</h3>
+<h3 style="color: #f0f0f0; font-weight: bold; font-size: 1.5rem; margin-top: 0.75rem;">Cómo Comprenderla, Usarla y Protegerse en Comunidad</h3>
 
 <div style="margin-top: 1.5rem; font-size: 1.125rem; color: white; font-weight: 500;">
   Una guía práctica, ética y de protección para madres, padres y cuidadores
